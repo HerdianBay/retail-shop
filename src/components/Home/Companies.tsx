@@ -6,7 +6,7 @@ export default function Companies() {
     <section>
       <div className="px-4 md:px-6">
         <div className="py-12">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 lg:max-w-3xl lg:mx-auto">
             <h4 className="mb-4">
               Trusted by over 20,000 companies all over the world
             </h4>
@@ -15,7 +15,7 @@ export default function Companies() {
               mattis blandit libero cursus mattis
             </p>
           </div>
-          <div className="grid grid-cols-4 gap-2 mb-20 md:grid-cols-5">
+          <div className="grid grid-cols-4 gap-2 mb-20 md:grid-cols-5 lg:max-w-4xl lg:mx-auto">
             <CompaniesIconWrapper>
               <svg
                 className="max-w-full fill-current text-grayshade-100 dark:text-lightColor-300"
@@ -72,7 +72,7 @@ export default function Companies() {
               </svg>
             </div>
           </div>
-          <div>
+          <div className="lg:max-w-3xl lg:mx-auto">
             <Testimonies />
           </div>
         </div>

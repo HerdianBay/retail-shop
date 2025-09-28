@@ -9,7 +9,7 @@ export default function Solution() {
       <div className="absolute inset-0 bg-base-300 mb-16 -z-10"></div>
       <div className="px-4 z-10 md:px-6">
         <div className="pt-12">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 lg:max-w-3xl lg:mx-auto">
             <h4 className="mb-4">Explore the solutions</h4>
             <p className="text-xl">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
