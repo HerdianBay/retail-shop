@@ -1,7 +1,7 @@
 export default function Testimonies() {
   return (
     <div className="card border border-violet-600 shadow-sm relative ">
-      <div className="card-body items-center text-center pt-20">
+      <div className="card-body items-center text-center pt-20 md:px-8">
         <div className="avatar absolute top-0 -translate-y-1/3">
           <div className="w-24 rounded-full">
             <img src="/avatar.png" />

@@ -2,7 +2,7 @@ import { Menu, User } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="bg-[url('/abstract_design.svg')] bg-cover bg-center fixed top-0 w-full z-10 bg-white">
+    <header className="bg-[url('/abstract_design.svg')] bg-cover bg-center fixed top-0 w-full z-10 bg-white ">
       <div className="navbar shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
