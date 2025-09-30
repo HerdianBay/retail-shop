@@ -1,8 +1,11 @@
 export default function Subscribe() {
   return (
     <section>
-      <div className="px-4 md:px-6">
-        <div className="card bg-neutral text-neutral-content overflow-hidden">
+      <div className="px-4 md:px-6 xl:max-w-6xl xl:mx-auto">
+        <div
+          className="card bg-neutral text-neutral-content overflow-hidden"
+          data-aos="zoom-y-out"
+        >
           <div className="absolute right-0 bottom-0 z-30 hidden lg:block">
             <svg width="428" height="328" xmlns="http://www.w3.org/2000/svg">
               <defs>

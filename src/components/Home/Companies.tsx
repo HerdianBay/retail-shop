@@ -10,7 +10,7 @@ export default function Companies() {
             <h4 className="mb-4">
               Trusted by over 20,000 companies all over the world
             </h4>
-            <p className="text-xl">
+            <p className="text-xl" data-aos="zoom-y-out">
               Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar
               mattis blandit libero cursus mattis
             </p>

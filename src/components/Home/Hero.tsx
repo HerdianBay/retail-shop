@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="relative">
-      <div className="absolute hidden lg:block lg:left-1/3 -translate-x-1/2 top-10">
+      <div className="absolute hidden lg:block lg:left-1/3 -translate-x-1/2 top-10 xl:left-1/2">
         <svg
           width="1200"
           height="490"
@@ -27,21 +27,33 @@ export default function Hero() {
           </g>
         </svg>
       </div>
-      <div className="hero pt-32 pb-12 mt-16 md:pt-40 md:pb-20">
+      <div className="hero pt-32 pb-12 mt-16 md:pt-40 md:pb-20 xl:mt-0 xl:max-w-6xl xl:mx-auto">
         <div className="hero-content text-center">
           <div className="max-w-md md:max-w-2xl lg:max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tighter mb-4">
+            <h1
+              className="text-5xl md:text-6xl font-bold tracking-tighter mb-4"
+              data-aos="zoom-y-out"
+              data-aos-delay="0"
+            >
               Make your Outfit{" "}
               <span className="bg-gradient-to-r from-primary to-base-300 bg-clip-text text-transparent">
                 wonderful
               </span>
             </h1>
-            <p className="text-xl mb-8">
+            <p
+              className="text-xl mb-8"
+              data-aos="zoom-y-out"
+              data-aos-delay="300"
+            >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
               soluta iusto expedita veniam asperiores, cumque id, tempora
               numquam voluptatibus.
             </p>
-            <div className="max-w-xs mx-auto md:flex justify-between">
+            <div
+              className="max-w-xs mx-auto md:flex justify-between"
+              data-aos="zoom-y-out"
+              data-aos-delay="600"
+            >
               <button className="btn btn-primary btn-lg w-full mb-4 text-base md:w-fit">
                 Start Shopping
               </button>

@@ -2,8 +2,8 @@ import { Menu, User } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="bg-[url('/abstract_design.svg')] bg-cover bg-center fixed top-0 w-full z-50 bg-white ">
-      <div className="navbar shadow-sm">
+    <header className="bg-[url('/abstract_design.svg')] bg-cover bg-center fixed top-0 w-full z-50 bg-white xl:static">
+      <div className="navbar shadow-sm lg:px-16 xl:px-36">
         <div className="navbar-start lg:hidden">
           <div className="dropdown">
             <div
@@ -30,18 +30,32 @@ export default function Header() {
           </div>
         </div>
         <div className="navbar-center lg:navbar-start lg:flex-1">
-          <a className="btn btn-ghost text-xl">Retail Shop</a>
+          <a className="btn btn-ghost text-xl md:text-2xl xl:text-3xl">
+            Retail Shop
+          </a>
         </div>
         <div className="hidden lg:inline-flex lg:flex-2 lg:max-w-2/5 lg:justify-center bg-white rounded-full py-1.5 border">
-          <ul className="flex gap-20">
-            <li>Home</li>
-            <li>Product</li>
-            <li>About</li>
+          <ul className="flex gap-20 xl:text-xl">
+            <li>
+              <a href="#" className="hover:cursor-pointer">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:cursor-pointer">
+                Product
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:cursor-pointer">
+                About
+              </a>
+            </li>
           </ul>
         </div>
         <div className="navbar-end lg:flex-1">
           <button className="btn btn-ghost btn-circle">
-            <User />
+            <User className="lg:w-7 lg:h-7 xl:w-8 xl:h-8" />
           </button>
         </div>
       </div>

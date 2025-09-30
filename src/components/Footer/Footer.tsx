@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="px-4 md:px-6">
+    <div className="px-4 md:px-6 xl:max-w-6xl xl:mx-auto">
       <footer className="footer sm:footer-horizontal text-base-content py-10 lg:gap-10">
         <nav>
           <h6 className="footer-title text-primary opacity-100">Products</h6>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </nav>
       </footer>
-      <div className="divider"></div>
+      <div className="divider xl:max-w-6xl xl:mx-auto"></div>
     </div>
   );
 }
