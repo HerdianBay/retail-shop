@@ -25,7 +25,13 @@ export interface solutionProps {
 export interface aboutData {
   title: string;
   description: string;
-  icons: ReactElement<SVGProps<SVGSVGElement>>[];
+  icons: aboutIcon[];
+  clickable: boolean;
+}
+
+export interface aboutIcon {
+  href?: string;
+  icon: ReactElement<SVGProps<SVGSVGElement>>;
 }
 
 export interface aboutProps {

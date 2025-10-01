@@ -29,6 +29,7 @@ export default function AboutDev({ datas }: aboutProps) {
             title={data.title}
             description={data.description}
             icons={data.icons}
+            clickable={data.clickable}
           />
         ))}
       </article>
