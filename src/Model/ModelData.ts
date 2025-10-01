@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import type { ReactElement, SVGProps } from "react";
 
 export interface staticCard {
   id: number;
@@ -19,4 +20,14 @@ export interface solutionProps {
   datas: staticCard[];
   activeIndex: number | null;
   setActiveIndex: (index: number) => void;
+}
+
+export interface aboutData {
+  title: string;
+  description: string;
+  icons: ReactElement<SVGProps<SVGSVGElement>>[];
+}
+
+export interface aboutProps {
+  datas: aboutData[];
 }

@@ -2,14 +2,17 @@ import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import About from "./pages/About";
 
 export default function App() {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <>
-      <Home />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
   );
 }

@@ -1,4 +1,5 @@
 import { Menu, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -24,15 +25,18 @@ export default function Header() {
                 <a>Product</a>
               </li>
               <li>
-                <a>About</a>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center lg:navbar-start lg:flex-1">
-          <a className="btn btn-ghost text-xl md:text-2xl xl:text-3xl">
+          <Link
+            to="/"
+            className="btn btn-ghost text-xl md:text-2xl xl:text-3xl"
+          >
             Retail Shop
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:inline-flex lg:flex-2 lg:max-w-2/5 lg:justify-center bg-white rounded-full py-1.5 border">
           <ul className="flex gap-20 xl:text-xl">
@@ -47,9 +51,9 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:cursor-pointer">
+              <Link to="/about" className="hover:cursor-pointer">
                 About
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
