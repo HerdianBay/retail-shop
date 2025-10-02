@@ -17,64 +17,64 @@ export default function Subscribe() {
                   r="96.031%"
                   id="ni-a"
                 >
-                  <stop stop-color="#c6afff" offset="0%"></stop>
-                  <stop stop-color="#5c1bff" offset="44.317%"></stop>
-                  <stop stop-color="#4b03ff" offset="100%"></stop>
+                  <stop stopColor="#c6afff" offset="0%"></stop>
+                  <stop stopColor="#5c1bff" offset="44.317%"></stop>
+                  <stop stopColor="#4b03ff" offset="100%"></stop>
                 </radialGradient>
               </defs>
-              <g fill="none" fill-rule="evenodd">
+              <g fill="none" fillRule="evenodd">
                 <g fill="#b99dff">
                   <ellipse
-                    fill-opacity=".04"
+                    fillOpacity=".04"
                     cx="185"
                     cy="15.576"
                     rx="16"
                     ry="15.576"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".24"
+                    fillOpacity=".24"
                     cx="100"
                     cy="68.402"
                     rx="24"
                     ry="23.364"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".12"
+                    fillOpacity=".12"
                     cx="29"
                     cy="251.231"
                     rx="29"
                     ry="28.231"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".64"
+                    fillOpacity=".64"
                     cx="29"
                     cy="251.231"
                     rx="8"
                     ry="7.788"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".12"
+                    fillOpacity=".12"
                     cx="342"
                     cy="31.303"
                     rx="8"
                     ry="7.788"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".48"
+                    fillOpacity=".48"
                     cx="62"
                     cy="126.811"
                     rx="2"
                     ry="1.947"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".12"
+                    fillOpacity=".12"
                     cx="78"
                     cy="7.072"
                     rx="2"
                     ry="1.947"
                   ></ellipse>
                   <ellipse
-                    fill-opacity=".64"
+                    fillOpacity=".64"
                     cx="185"
                     cy="15.576"
                     rx="6"

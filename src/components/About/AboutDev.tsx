@@ -4,11 +4,11 @@ import AboutSection from "./AboutSection";
 export default function AboutDev({ datas }: aboutProps) {
   return (
     <main>
-      <article className="mt-16 pt-32 w-2/3 mx-auto">
+      <article className="mt-16 pt-32 w-2/3 mx-auto xl:mt-0">
         <h1 className="text-3xl font-bold text-violet-500 mb-3">
           About Developer
         </h1>
-        <p className="text-lg">
+        <p className="text-lg lg:text-xl">
           Hello there! I'm{" "}
           <span className="font-bold text-violet-500">
             Mohammad Herdian Bayu Pratama

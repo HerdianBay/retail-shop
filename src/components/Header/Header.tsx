@@ -19,10 +19,10 @@ export default function Header() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a>Product</a>
+                <a>Products</a>
               </li>
               <li>
                 <Link to="/about">About</Link>
@@ -41,13 +41,13 @@ export default function Header() {
         <div className="hidden lg:inline-flex lg:flex-2 lg:max-w-2/5 lg:justify-center bg-white rounded-full py-1.5 border">
           <ul className="flex gap-20 xl:text-xl">
             <li>
-              <a href="#" className="hover:cursor-pointer">
+              <Link to="/" className="hover:cursor-pointer">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:cursor-pointer">
-                Product
+                Products
               </a>
             </li>
             <li>

@@ -16,12 +16,12 @@ export default function Hero() {
               y2="100%"
               id="illustration-01"
             >
-              <stop stop-color="#A685FA" offset="0%"></stop>
-              <stop stop-color="#8254F8" offset="77.402%"></stop>
-              <stop stop-color="#703BF7" offset="100%"></stop>
+              <stop stopColor="#A685FA" offset="0%"></stop>
+              <stop stopColor="#8254F8" offset="77.402%"></stop>
+              <stop stopColor="#703BF7" offset="100%"></stop>
             </linearGradient>
           </defs>
-          <g fill="url(#illustration-01)" fill-rule="evenodd">
+          <g fill="url(#illustration-01)" fillRule="evenodd">
             <circle cx="1232" cy="128" r="128"></circle>
             <circle cx="155" cy="443" r="64"></circle>
           </g>
