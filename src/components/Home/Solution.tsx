@@ -22,7 +22,7 @@ export default function Solution({
           <div className="md:grid md:grid-cols-12 md:gap-6">
             <div className="mb-8 md:col-span-7 md:mb-0" data-aos="fade-right">
               <h4 className="mb-3">Powerful suite of tools</h4>
-              <p className="text-xl md:mb-8">
+              <p className="text-xl mb-8">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa.

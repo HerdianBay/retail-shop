@@ -22,7 +22,7 @@ export default function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <a>Products</a>
+                <Link to="/products">Products</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
@@ -46,9 +46,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a href="#" className="hover:cursor-pointer">
+              <Link to="/products" className="hover:cursor-pointer">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/about" className="hover:cursor-pointer">
