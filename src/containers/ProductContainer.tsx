@@ -29,10 +29,18 @@ export default function ProductsContainer() {
     getData();
   }, []);
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-14 gap-8 lg:p-0 xl:grid-cols-3">
-      {productData.map((data, index) => (
-        <Product datas={data} key={index} />
-      ))}
-    </div>
+    <>
+      {productData.length === 0 ? (
+        <div className="px-4 flex">
+          <span className="loading loading-ring loading-xl md:w-11"></span>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-14 gap-8 lg:p-0 xl:grid-cols-3">
+          {productData.map((data, index) => (
+            <Product datas={data} key={index} />
+          ))}
+        </div>
+      )}
+    </>
   );
 }
