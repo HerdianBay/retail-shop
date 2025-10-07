@@ -6,7 +6,11 @@ export default function Product({ datas }: productsProps) {
     <div className="card bg-base-100 shadow-sm border border-gray-400">
       <figure className="mx-6 mt-6">
         <Link to={`/products/${datas.id}`}>
-          <img src={`${datas.images[0]}`} alt="Shoes" className="rounded-lg" />
+          <img
+            src={`${datas.images[0]}`}
+            alt="Shoes"
+            className="rounded-lg max-h-[261px] w-[261px]"
+          />
         </Link>
       </figure>
       <div className="card-body justify-between">

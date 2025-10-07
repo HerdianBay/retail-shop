@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import type { ReactElement, ReactNode, SVGProps } from "react";
+import type { NavigateFunction } from "react-router-dom";
 
 export interface staticCard {
   id?: number;
@@ -90,6 +91,13 @@ export interface productsDataAPI {
 
 export interface productsProps {
   datas: productsDataAPI;
+}
+
+export interface productDetailProps {
+  datas: productsDataAPI;
+  activeImage: number;
+  setActiveImage: (index: number) => void;
+  navigate: NavigateFunction;
 }
 
 export interface CategoryContextType {

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ProductDetailComp from "../components/ProductDetail/ProductDetailComp";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -9,6 +9,8 @@ export default function ProductDetailContainer() {
   const [detailProduct, setDetailProduct] = useState<productsDataAPI>(
     {} as productsDataAPI
   );
+  const [activeImage, setActiveImage] = useState<number>(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getData = async (id: string) => {
@@ -26,5 +28,12 @@ export default function ProductDetailContainer() {
   if (!detailProduct.id) {
     return <span className="loading loading-spinner loading-xl"></span>;
   }
-  return <ProductDetailComp datas={detailProduct} />;
+  return (
+    <ProductDetailComp
+      datas={detailProduct}
+      activeImage={activeImage}
+      setActiveImage={setActiveImage}
+      navigate={navigate}
+    />
+  );
 }
