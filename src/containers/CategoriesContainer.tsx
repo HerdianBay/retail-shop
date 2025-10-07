@@ -1,13 +1,20 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Categories from "../components/Products/Categories";
 import type {
   categoriesDataAPI,
   rawDataCategoriesAPI,
 } from "../Model/ModelData";
 import axios from "axios";
+import { CategoryContext } from "../store/CategoryContext";
 
 export default function CategoriesContainer() {
-  const [activeNumber, setActiveNumber] = useState<number>(0);
+  const context = useContext(CategoryContext);
+  if (!context) {
+    throw new Error(
+      "CategoriesContainer must be used within a CategoryProvider"
+    );
+  }
+  const { selectedCategory, setSelectedCategory } = context;
   const [categoriesData, setCategoriesData] = useState<categoriesDataAPI[]>([]);
 
   useEffect(() => {
@@ -39,8 +46,8 @@ export default function CategoriesContainer() {
   return (
     <Categories
       dataCategories={categoriesData}
-      activeNumber={activeNumber}
-      onClick={setActiveNumber}
+      activeCategory={selectedCategory}
+      onClick={setSelectedCategory}
     />
   );
 }

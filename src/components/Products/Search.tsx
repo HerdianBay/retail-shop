@@ -1,4 +1,6 @@
-export default function Search() {
+import type { searchProps } from "../../Model/ModelData";
+
+export default function Search({ value, onChange }: searchProps) {
   return (
     <div className="mt-16 px-4 py-6 md:px-14 xl:mt-5">
       <label className="input w-full md:w-1/2 lg:w-1/3">
@@ -18,7 +20,15 @@ export default function Search() {
             <path d="m21 21-4.3-4.3"></path>
           </g>
         </svg>
-        <input type="search" required placeholder="Search" />
+        <input
+          type="search"
+          required
+          placeholder="Search"
+          value={value}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            onChange(e.target.value)
+          }
+        />
       </label>
     </div>
   );

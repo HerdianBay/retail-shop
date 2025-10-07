@@ -4,7 +4,7 @@ import CategoriesList from "./CategoriesList";
 
 export default function Categories({
   dataCategories,
-  activeNumber,
+  activeCategory,
   onClick,
 }: categoriesProps) {
   return (
@@ -29,7 +29,7 @@ export default function Categories({
                 id={data.id}
                 name={data.name}
                 key={index}
-                activeNumber={activeNumber}
+                activeCategory={activeCategory}
                 onClick={onClick}
               />
             ))

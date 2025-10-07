@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import type { ReactElement, SVGProps } from "react";
+import type { ReactElement, ReactNode, SVGProps } from "react";
 
 export interface staticCard {
   id?: number;
@@ -40,8 +40,8 @@ export interface aboutProps {
 
 export interface categoriesProps {
   dataCategories: categoriesDataAPI[];
-  activeNumber: number | null;
-  onClick: (id: number) => void;
+  activeCategory: number;
+  onClick: (category: number) => void;
 }
 
 export interface categoriesDataAPI {
@@ -62,8 +62,8 @@ export interface rawDataCategoriesAPI {
 export interface categoriesListProps {
   id: number;
   name: string;
-  activeNumber: number | null;
-  onClick: (id: number) => void;
+  activeCategory: number;
+  onClick: (category: number) => void;
 }
 
 export interface rawDataProductsAPI {
@@ -90,4 +90,23 @@ export interface productsDataAPI {
 
 export interface productsProps {
   datas: productsDataAPI;
+}
+
+export interface CategoryContextType {
+  selectedCategory: number;
+  setSelectedCategory: (category: number) => void;
+}
+
+export interface searchProps {
+  value: string;
+  onChange: (data: string) => void;
+}
+
+export interface searchContextType {
+  searchValue: string;
+  setSearchValue: (value: string) => void;
+}
+
+export interface providerProps {
+  children: ReactNode;
 }
