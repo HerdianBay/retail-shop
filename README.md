@@ -1,7 +1,7 @@
 # 🛍️ Retail Shop
 
 **Retail Shop** is a simple e-commerce web application built with **React + TypeScript** using **Vite** as the build tool.  
-The app displays products fetched from the **Platzi Fake Store API** and includes three main pages: **Home**, **Products**, and **About**.
+The app displays products fetched from the **Platzi Fake Store API** and includes three main pages: **Home**, **Products**, and **About**. This project was created as a front-end development practice using React and TypeScript.
 
 ---
 
@@ -49,4 +49,26 @@ npm install
 
 # 4. Start the development server
 npm run dev
+```
+
+---
+
+## API Used
+
+This project fetches product data from the **Platzi Fake Store API**: https://api.escuelajs.co/api/v1/products
+Example product data structure:
+
+```bash
+{
+  "id": 1,
+  "title": "Handmade Fresh Table",
+  "price": 687,
+  "description": "Ergonomic executive chair upholstered in bonded black leather",
+  "images": ["https://api.escuelajs.co/api/v1/files/..."],
+  "category": {
+    "id": 2,
+    "name": "Furniture",
+    "image": "https://api.escuelajs.co/api/v1/files/..."
+  }
+}
 ```
