@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Hero() {
+  const navigate = useNavigate();
   return (
     <section className="relative">
       <div className="absolute hidden lg:block lg:left-1/3 -translate-x-1/2 top-10 xl:left-1/2">
@@ -54,10 +57,16 @@ export default function Hero() {
               data-aos="zoom-y-out"
               data-aos-delay="600"
             >
-              <button className="btn btn-primary btn-lg w-full mb-4 text-base md:w-fit">
+              <button
+                className="btn btn-primary btn-lg w-full mb-4 text-base md:w-fit"
+                onClick={() => navigate("/products")}
+              >
                 Start Shopping
               </button>
-              <button className="btn btn-neutral btn-lg w-full text-base md:w-fit">
+              <button
+                className="btn btn-neutral btn-lg w-full text-base md:w-fit"
+                onClick={() => navigate("/about")}
+              >
                 Learn More
               </button>
             </div>

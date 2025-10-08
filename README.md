@@ -3,6 +3,8 @@
 **Retail Shop** is a simple e-commerce web application built with **React + TypeScript** using **Vite** as the build tool.  
 The app displays products fetched from the **Platzi Fake Store API** and includes three main pages: **Home**, **Products**, and **About**. This project was created as a front-end development practice using React and TypeScript.
 
+Live App : https://retail-shop-bice.vercel.app/
+
 ---
 
 ## 🚀 Main Features
