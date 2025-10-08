@@ -1,69 +1,52 @@
-# React + TypeScript + Vite
+# 🛍️ Retail Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Retail Shop** is a simple e-commerce web application built with **React + TypeScript** using **Vite** as the build tool.  
+The app displays products fetched from the **Platzi Fake Store API** and includes three main pages: **Home**, **Products**, and **About**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Main Features
 
-## Expanding the ESLint configuration
+### 🏠 Home
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A welcoming landing page that introduces the company or e-commerce platform. However, it is currently still in the form of a template with customizable data.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🛒 Products
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Displays a list of products fetched in real-time from the **Platzi Fake Store API**.  
+Each product card includes basic details such as an image, title, price, and short description.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 👨‍💻 About
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+A page introducing the developer behind this project, along with the technologies used to build it.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧰 Tech Stack
+
+- ⚡ [Vite](https://vitejs.dev/) — Fast build tool for modern front-end projects
+- ⚛️ [React](https://react.dev/)
+- 🧠 [TypeScript](https://www.typescriptlang.org/)
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)
+- 🌼 [DaisyUI](https://daisyui.com/)
+- 🌐 [Platzi Fake Store API](https://fakeapi.platzi.com/)
+
+---
+
+## 📦 Installation & Setup
+
+Make sure you have **Node.js** installed (version 18 or higher is recommended).
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/username/repo-name.git
+
+# 2. Navigate to the project folder
+cd repo-name
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
 ```
